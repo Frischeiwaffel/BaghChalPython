@@ -32,7 +32,13 @@ Makefile*
 #QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
+
+#Visual Studio
 *.~vsd
 *.pyproj
 *.suo
 *.sln
+
+# python
+*__pycache__/*
+*.pyc
