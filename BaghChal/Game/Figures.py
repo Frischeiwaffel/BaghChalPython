@@ -33,7 +33,10 @@ class Sheep(Figure):
 
     def _set_position(self,position):
         #check if new position is in reach of the old position
-        Figure._set_position(self,position)
+        if((self.position.Y-position.Y)*(self.position.Y-position.Y)<=1 and (self.position.X-position.X)*(self.position.X-position.X)<=1):
+            Figure._set_position(self,position)
+        else:
+            raise InvalidMove("Position is out of range!")
     
 
     Position = property(Figure._get_position,_set_position)
@@ -45,7 +48,11 @@ class Tiger(Figure):
     
     def _set_position(self,position):
         #check if new position is in reach of the old position
-        Figure._set_position(self,position)
+        #unvollständig
+        if((self.position.Y-position.Y)*(self.position.Y-position.Y)<=1 and (self.position.X-position.X)*(self.position.X-position.X)<=1):
+            Figure._set_position(self,position)
+        else:
+            raise InvalidMove("Position is out of range!")
 
     Position = property(Figure._get_position,_set_position)
 
