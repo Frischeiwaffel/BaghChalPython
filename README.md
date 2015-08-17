@@ -1,8 +1,8 @@
 # BaghChalPython
-Bagh Chal (Tiger Moving Game) is a strategic, two-player board game that originates in Nepal. This project deals with the implementation and its AI, impmented in Python using Qt for its GUI.
+Bagh Chal (Tiger Moving Game) is a strategic, two-player board game that originates in Nepal. This project deals with the implementation and its AI, implemented in Python using Qt for its GUI.
 
-
-Rules:
+## Gameplay
+###Rules:
 At the start of the game all four tigers are placed on the four corners of the grid, facing the center. All goats start off the board.
 
 The pieces must be put at the intersections of the board lines and moves follow these lines.
